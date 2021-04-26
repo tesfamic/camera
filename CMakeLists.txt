@@ -42,20 +42,20 @@ include_directories(
   /usr/include/glib-2.0
 )
 
-# add_executable(camera1 src/camera1.cpp src/tcamimage.cpp src/tcamcamera.cpp)
-# add_executable(camera2 src/camera2.cpp src/tcamimage.cpp src/tcamcamera.cpp)
-# add_executable(camera3 src/camera3.cpp src/tcamimage.cpp src/tcamcamera.cpp)
-# add_executable(camera4 src/camera4.cpp src/tcamimage.cpp src/tcamcamera.cpp)
+add_executable(camera1 src/camera1.cpp src/tcamimage.cpp src/tcamcamera.cpp)
+add_executable(camera2 src/camera2.cpp src/tcamimage.cpp src/tcamcamera.cpp)
+add_executable(camera3 src/camera3.cpp src/tcamimage.cpp src/tcamcamera.cpp)
+add_executable(camera4 src/camera4.cpp src/tcamimage.cpp src/tcamcamera.cpp)
 
-# add_executable(img_subscriber src/img_subscriber.cpp)
+add_executable(img_subscriber src/img_subscriber.cpp)
 
-# target_link_libraries(camera1 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
-# target_link_libraries(camera2 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
-# target_link_libraries(camera3 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
-# target_link_libraries(camera4 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(camera1 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(camera2 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(camera3 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(camera4 ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
 
 
-# target_link_libraries(img_subscriber ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(img_subscriber ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${TCAMLIB_LIBRARIES} ${GSTREAMER_LIBRARIES}  ${OpenCV_LIBS})
 
 
 
